@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: #eee;
+}
+
+.container .header {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.container .header h3 {
+    font-size: 30px;
+    color: #333;
+}
+
+.container .header h3 span {
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.container .header h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+.container .header h1 span {
+    color: crimson;
+}
+
+.container .header p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container .header .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #333;
+    color: #fff;
+    margin: 0 5px;
+    text-transform: capitalize;
+}
+
+.container .header .btn:hover {
+    background: crimson;
+}
+
+/* formulaire */
+.formulaire {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: #eee;
+}
+
+.formulaire form {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #fff;
+    text-align: center;
+}
+
+.formulaire form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.formulaire form input,
+.formulaire form select {
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 18px;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.formulaire form select option {
+    background: #fff;
+}
+
+.formulaire form .form-btn {
+    background: #fbd0d9;
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.formulaire form .form-btn:hover {
+    background: crimson;
+    color: #fff;
+}
+
+.formulaire form p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.formulaire form p a {
+    color: crimson;
+}
+
+/* error-msg */
+.formulaire form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*  */
+
+.Btn_add {
+    width: fit-content;
+    margin-bottom:20px;
+    background-color: crimson;
+    padding: 5px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: 0;
+    border-radius: 6px;
+    text-decoration: 0;
+    float: right;
+}
+.Btn_add img {
+    margin-right: 5px;
+    height: 20px;
+}
+
+.container .content {
+    width: 75%;
+    margin: auto;
+    margin: 50px 0px;
+    /* padding: 10px 60px; */
+}
+
+.content .ideas-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.content .ideas-container .idea-card {
+    padding: 25px;
+    background: #fff;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    transition: all .3s ease;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+
+.content .ideas-container .idea-card:hover {
+    margin-top: -1%;
+    border: 1px solid black;
+}
+
+.idea-card a img {
+    height: 25px;
+   
+}
+
+/*Form CSS*/
+.content-form {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: #f6f8f8;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.form form {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+}
+.back_btn {
+    color: #2bc48a;
+    text-decoration: 0;
+    display: flex;
+    align-items: center;
+}
+
+.back_btn img {
+    height: 16px;
+    margin-right:5px ;
+}
+h2 {
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.erreur_message {
+    color: red;
+    font-size: 12px;
+}
+
+.ajout-btn label {
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.ajout-btn input,
+.ajout-btn select{
+    padding: 10px;
+    border: 1px solid #999;
+    outline: 0;
+    margin-top: 2px;
+}
+.ajout-btn input:focus{
+    border: 1px solid crimson;
+}
+.ajout-btn .bouton-ajout{
+    margin-top: 25px;
+    background-color: #2bc48a;
+    border: 1px solid #2bc48a;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* .container .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    margin: auto;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+} */
